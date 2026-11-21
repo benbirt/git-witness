@@ -21,8 +21,10 @@ Both messages are HTTP messages serialised as `message/http` ([RFC 9112](https:/
 ## Repository structure
 
 ```
-├── .github/workflows/
-│   └── cosign.yml     # Cosigns checkpoints submitted as issues
+├── .github/
+│   ├── dependabot.yml # Weekly updates to the pinned Actions
+│   └── workflows/
+│       └── cosign.yml # Cosigns checkpoints submitted as issues
 ├── origins/
 │   └── <origin>       # Verifier keys for a registered origin, one per line
 └── checkpoints/
