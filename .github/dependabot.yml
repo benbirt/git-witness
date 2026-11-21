@@ -1,0 +1,14 @@
+# Weekly version updates.
+#
+# The only versions this repository states are the Actions its workflows use,
+# each pinned to a commit with its release tag in a comment beside it.
+# Dependabot moves both to the newest release.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      github-actions:
+        patterns: ["*"]
